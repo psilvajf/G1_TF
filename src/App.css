@@ -1,0 +1,333 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /* height: 40vmin; */
+  pointer-events: none;
+  
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  background-color: rgb(235, 228, 228);
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+  text-emphasis-color: white;
+}
+
+.meuPadraoFormGroup {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  background-color: rgb(235, 228, 228);
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+  text-emphasis-color: white;
+}
+
+.meuPadraoFormGroup {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+
+.cor{
+  color: rgb(79, 127, 218);
+}
+
+
+.corForm{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFF;
+}
+
+
+.fundo_tela{
+  background-color: rgb(96, 92, 92);
+}
+
+.cor_navbar{
+  background-color: rgb(108, 108, 195);
+}
+
+.corForm404{
+  background-color: rgb(221, 44, 24);
+
+}
+
+
+.sk-cube-grid {
+  width: 60px;
+  height: 60px;
+  margin: 100px auto;
+}
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #ffffff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+}
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s; }
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1); 
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  } 35% {
+    -webkit-transform: scale3D(0, 0, 1);
+            transform: scale3D(0, 0, 1);
+  } 
+}
+
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pikachu-face {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #FFD700;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  animation: facePulse 2s infinite;
+}
+
+/* Orelhas */
+.ear {
+  position: absolute;
+  width: 30px;
+  height: 90px;
+  background: #FFD700;
+  border-radius: 50% 50% 0 0;
+  top: -60px;
+  z-index: -1;
+}
+
+.ear.left { left: 20px; transform: rotate(-15deg); }
+.ear.right { right: 20px; transform: rotate(15deg); }
+
+.ear::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: black;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+/* Olhos */
+.eye {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: black;
+  border-radius: 50%;
+  top: 60px;
+  animation: blink 5s infinite;
+}
+
+.eye.left { left: 45px; }
+.eye.right { right: 45px; }
+
+/* Bochechas elétricas */
+.cheek {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: red;
+  border-radius: 50%;
+  bottom: 40px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+  animation: electric 1.5s infinite;
+}
+
+.cheek.left { left: 25px; }
+.cheek.right { right: 25px; }
+
+/* Raios */
+.lightning {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: yellow;
+  clip-path: polygon(40% 0%, 60% 0%, 40% 50%, 70% 50%, 30% 100%, 50% 50%, 20% 50%);
+  opacity: 0;
+  animation: lightningFlash 1.5s infinite;
+}
+
+.lightning.left {
+  left: 5px;
+  bottom: 90px;
+  transform: rotate(-20deg);
+  animation-delay: 0s;
+}
+
+.lightning.right {
+  right: 5px;
+  bottom: 90px;
+  transform: rotate(20deg);
+  animation-delay: 0.75s;
+}
+
+/* Boca */
+.mouth {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 25px;
+  border-bottom: 4px solid black;
+  border-radius: 0 0 50% 50%;
+}
+
+/* Texto de loading */
+.loading-text {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  animation: textPulse 2s infinite;
+}
+
+/* Animações */
+@keyframes facePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes electric {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    background: red;
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 1), 0 0 80px rgba(255, 255, 0, 0.8);
+    background: #ff4d4d;
+  }
+}
+
+@keyframes blink {
+  0%, 90%, 100% { height: 22px; }
+  92%, 96% { height: 3px; }
+}
+
+@keyframes textPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes lightningFlash {
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0; transform: scale(0.8); }
+}

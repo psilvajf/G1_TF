@@ -1,0 +1,36 @@
+# =====================================================================
+# Pokemon Game API - PostgreSQL para desenvolvimento/demonstracao
+# Parte do integrante: Everton - Banco de Dados e Persistencia
+#
+# Sobe um PostgreSQL ja criando o banco e executando os scripts.
+# Os arquivos em src/main/resources/db sao montados em
+# /docker-entrypoint-initdb.d e rodados em ordem alfabetica
+# (01-schema.sql antes de 02-data.sql) na primeira inicializacao.
+#
+# Uso:
+#   docker compose up -d
+#   docker compose down        # para
+#   docker compose down -v     # para e apaga os dados (reexecuta os scripts)
+# =====================================================================
+services:
+  db:
+    image: postgres:16
+    container_name: pokemon_game_db
+    environment:
+      POSTGRES_DB: pokemon_game
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./src/main/resources/db/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./src/main/resources/db/data.sql:/docker-entrypoint-initdb.d/02-data.sql:ro
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d pokemon_game"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pgdata:
